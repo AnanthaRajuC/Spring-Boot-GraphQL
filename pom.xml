@@ -46,6 +46,9 @@
 	
 	<properties>
 		<java.version>11</java.version>
+		<graphql-spring-boot-starter.version>5.0.2</graphql-spring-boot-starter.version>
+		<graphql-java-tools.version>5.2.4</graphql-java-tools.version>
+		<graphiql-spring-boot-starter.version>5.0.2</graphiql-spring-boot-starter.version>
 	</properties>
 	
 	<dependencies>
@@ -87,6 +90,25 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.graphql-java/graphql-spring-boot-starter -->
+		<dependency>
+		    <groupId>com.graphql-java</groupId>
+		    <artifactId>graphql-spring-boot-starter</artifactId>
+		    <version>${graphql-spring-boot-starter.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.graphql-java/graphql-java-tools -->
+		<dependency>
+		    <groupId>com.graphql-java</groupId>
+		    <artifactId>graphql-java-tools</artifactId>
+		    <version>${graphql-java-tools.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.graphql-java/graphiql-spring-boot-starter -->
+		<dependency>
+		    <groupId>com.graphql-java</groupId>
+		    <artifactId>graphiql-spring-boot-starter</artifactId>
+		    <version>${graphiql-spring-boot-starter.version}</version>
 		</dependency>
 	</dependencies>
 
