@@ -2,6 +2,7 @@ package io.github.anantharajuc.sbgql;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * Spring Boot GraphQL.
@@ -9,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author <a href="mailto:arcswdev@gmail.com">Anantha Raju C</a>
  *
  */
+@ComponentScan({"io.github.anantharajuc.sbgql.api"})
 @SpringBootApplication
 public class SpringBootGraphQlApplication 
 {
