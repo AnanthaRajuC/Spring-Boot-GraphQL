@@ -2,20 +2,52 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	
+	<groupId>io.github.anantharajuc</groupId>
+	<artifactId>spring-boot-graphql</artifactId>
+	<version>latest</version>
+	<packaging>jar</packaging>
+	
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.5.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>io.github.anantharajuc</groupId>
-	<artifactId>spring-boot-graphql</artifactId>
-	<version>latest</version>
+
 	<name>Spring-Boot-GraphQL</name>
+	<url>https://github.com/AnanthaRajuC/Spring-Boot-GraphQL</url>
 	<description>Spring Boot GraphQL</description>
+	
+	<!-- Start - Spring Boot GraphQL Project Owner -->
+	<developers>
+		<developer>
+			<name>Anantha Raju C</name>
+			<email>arcswdev@gmail.com</email>
+			<timezone>UTC+05:30</timezone>
+		</developer>
+	</developers>
+	<!-- End - Spring Boot GraphQL Project Owner -->
+	
+	<!-- Start - Spring Boot GraphQL source repository -->
+    <scm>
+        <connection>https://github.com/AnanthaRajuC/Spring-Boot-GraphQL.git</connection>
+        <developerConnection>git@github.com:AnanthaRajuC/Spring-Boot-GraphQL.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+    <!-- End - Spring Boot GraphQL source repository -->
+    
+     <!-- Start - Spring Boot GraphQL issue management -->
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/AnanthaRajuC/Spring-Boot-GraphQL/issues</url>
+    </issueManagement>
+    <!-- End - Spring Boot GraphQL issue management -->
+	
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
