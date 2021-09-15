@@ -1,7 +1,6 @@
 package io.github.anantharajuc.sbgql.api;
 
 import java.time.LocalDateTime;
-
 import org.springframework.stereotype.Component;
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
