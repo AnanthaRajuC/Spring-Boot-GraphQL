@@ -8,10 +8,10 @@ The API can be tested with any GraphQL client like [Altair GraphQL Client](https
 |`http://localhost:8080/graphql`                             | POST   |Altair GraphQL Client   |
 |`http://localhost:8080/graphql`                             | POST   |Postman GraphQL Request |
 
-<div style="text-align:center"><img src="/images/graphiql.PNG" /></div>    
+<div style="text-align:center"><img src="images\graphiql.PNG" /></div>    
 
-<div style="text-align:center"><img src="/images/altair-graphql-client.PNG" /></div>
+<div style="text-align:center"><img src="images\altair-graphql-client.PNG" /></div>
 
-<div style="text-align:center"><img src="/images/postman-graphql-request.PNG" /></div>
+<div style="text-align:center"><img src="images\postman-graphql-request.PNG" /></div>
 
 ---

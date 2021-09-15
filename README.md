@@ -1,6 +1,6 @@
 # Spring Boot GraphQL
 
-- [API](documents/API.MD)  
+- [API](documents/API.md)  
 
 <!-- CONTRIBUTING -->
 ## Contributing
