@@ -15,3 +15,61 @@ The API can be tested with any GraphQL client like [Altair GraphQL Client](https
 <div style="text-align:center"><img src="images\postman-graphql-request.PNG" /></div>
 
 ---
+
+```json 
+{
+  getString
+}
+```
+
+---
+
+```json 
+{
+  getGreetingsFirstName(firstName: "anantha")
+}
+```
+
+---
+
+```json 
+{
+  getGreetingsFullName(firstName:"anantha raju", lastName:"c")
+}
+```
+
+---
+
+```json 
+{
+  getGreetingsFullNameJSONrequest
+  (
+    fullName: { firstName: "Anantha Raju", lastName: "C" }
+  )
+}
+```
+
+---
+
+```json 
+{
+  findPersonById(id: 1) 
+  {
+    email
+    name
+  }
+}
+```
+
+---
+
+```json 
+{
+  findPersonById(id: 1) 
+  {
+    email
+  }
+}
+```
+
+---
