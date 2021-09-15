@@ -1,4 +1,22 @@
 type Query 
 {
 	getString : String
+	getGreetingsFirstName(firstName : String) : String
+	getGreetingsFullName(firstName : String, lastName : String) : String
+	getGreetingsFullNameJSONrequest(fullName : FullName) : String
+	
+	findPersonById(id : Long) : PersonResponse
+}
+
+input FullName
+{
+	firstName : String!
+	lastName : String	
+}
+
+type PersonResponse
+{
+	name : String
+	email : String
+	mobileNumber : String
 }

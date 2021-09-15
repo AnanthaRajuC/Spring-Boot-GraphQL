@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @author <a href="mailto:arcswdev@gmail.com">Anantha Raju C</a>
  *
  */
-@ComponentScan({"io.github.anantharajuc.sbgql.api"})
+@ComponentScan({"io.github.anantharajuc.sbgql.api","io.github.anantharajuc.sbgql.service","io.github.anantharajuc.sbgql.infra.config"})
 @SpringBootApplication
 public class SpringBootGraphQlApplication 
 {
