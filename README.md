@@ -1,5 +1,8 @@
 # Spring Boot GraphQL
 
+- [Technology stack & other Open-source libraries](documents/TECHNOLOGY_STACK.MD)  
+- [Getting Started](documents/GETTING_STARTED.MD)  
+- [Installation](documents/INSTALLATION.MD)  
 - [API](documents/API.md)  
 
 <!-- CONTRIBUTING -->

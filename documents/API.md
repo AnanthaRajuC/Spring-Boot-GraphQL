@@ -16,7 +16,7 @@ The API can be tested with any GraphQL client like [Altair GraphQL Client](https
 
 ---
 
-```json 
+```txt 
 {
   getString
 }
@@ -24,7 +24,7 @@ The API can be tested with any GraphQL client like [Altair GraphQL Client](https
 
 ---
 
-```json 
+```txt 
 {
   getGreetingsFirstName(firstName: "anantha")
 }
@@ -32,7 +32,7 @@ The API can be tested with any GraphQL client like [Altair GraphQL Client](https
 
 ---
 
-```json 
+```txt 
 {
   getGreetingsFullName(firstName:"anantha raju", lastName:"c")
 }
@@ -40,7 +40,7 @@ The API can be tested with any GraphQL client like [Altair GraphQL Client](https
 
 ---
 
-```json 
+```txt 
 {
   getGreetingsFullNameJSONrequest
   (
@@ -51,7 +51,7 @@ The API can be tested with any GraphQL client like [Altair GraphQL Client](https
 
 ---
 
-```json 
+```txt 
 {
   findPersonById(id: 1) 
   {
@@ -63,7 +63,7 @@ The API can be tested with any GraphQL client like [Altair GraphQL Client](https
 
 ---
 
-```json 
+```txt 
 {
   findPersonById(id: 1) 
   {
