@@ -67,7 +67,10 @@ The API can be tested with any GraphQL client like [Altair GraphQL Client](https
 {
   findPersonById(id: 1) 
   {
+    id
     email
+    name
+    isAdult
   }
 }
 ```

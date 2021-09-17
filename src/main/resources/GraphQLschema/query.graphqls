@@ -16,7 +16,16 @@ input FullName
 
 type PersonResponse
 {
+	id: ID
 	name : String
 	email : String
 	mobileNumber : String
+	isAdult : Boolean 
+	books : [BooksResponse]
 }
+
+type BooksResponse
+{
+	title : String
+}
+

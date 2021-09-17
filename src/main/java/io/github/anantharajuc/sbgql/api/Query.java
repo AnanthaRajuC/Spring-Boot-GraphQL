@@ -10,6 +10,7 @@ import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 
 import io.github.anantharajuc.sbgql.domain.model.FullName;
 import io.github.anantharajuc.sbgql.domain.model.dto.PersonResponse;
+import io.github.anantharajuc.sbgql.domain.model.person.Person;
 import io.github.anantharajuc.sbgql.service.PersonServiceImpl;
 
 @Component
@@ -20,8 +21,12 @@ public class Query implements GraphQLQueryResolver
 	
 	@Autowired
 	private ModelMapper modelMapper;
-
 	
+	public PersonResponse findPersonById(long id)
+	{
+		return modelMapper.map(personServiceImpl.findPersonById(id), PersonResponse.class);
+	}
+
 	public String getString()
 	{
 		return "Hello GraphQL World! "+LocalDateTime.now();
@@ -42,8 +47,8 @@ public class Query implements GraphQLQueryResolver
 		return "Hello "+fullName.getFirstName()+" "+fullName.getLastName()+ "! "+LocalDateTime.now();
 	}
 	
-	public PersonResponse findPersonById(long id)
+	/*public Person findPersonById(long id)
 	{
-		return modelMapper.map(personServiceImpl.findPersonById(id), PersonResponse.class);
-	}
+		return personServiceImpl.findPersonById(id);
+	}*/
 }

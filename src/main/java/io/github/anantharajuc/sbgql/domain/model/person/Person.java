@@ -1,9 +1,15 @@
 package io.github.anantharajuc.sbgql.domain.model.person;
 
 import java.util.Date;
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
@@ -11,7 +17,6 @@ import javax.validation.constraints.NotNull;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import io.github.anantharajuc.sbgql.domain.model.common.AuditEntity;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -32,7 +37,6 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-@JsonIgnoreProperties({"books", "movies","address"}) 
 public class Person extends AuditEntity
 {
 	private static final long serialVersionUID = 1L;
@@ -49,12 +53,16 @@ public class Person extends AuditEntity
 	String mobileNumber;
 	
 	@Column(name="age", nullable=true)
-	int age;
+	Integer age;
 	
 	@JsonFormat(pattern="yyyy-MM-dd", timezone="Asia/Kolkata")
-	@Column(name="dob", nullable = true)
-	Date dob;
+	@Column(name="date_of_birth", nullable = true)
+	Date dateOfBirth;
 	
 	@Column(name = "is_adult", nullable=false, length=1)
 	Boolean isAdult;
+	
+	@OneToMany(targetEntity = Books.class,cascade = CascadeType.ALL, fetch= FetchType.EAGER)
+    @JoinColumn(name="person_id",referencedColumnName="id")
+    private List<Books> books;
 }
