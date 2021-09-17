@@ -9,8 +9,7 @@ import org.springframework.stereotype.Component;
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 
 import io.github.anantharajuc.sbgql.domain.model.FullName;
-import io.github.anantharajuc.sbgql.domain.model.dto.PersonResponse;
-import io.github.anantharajuc.sbgql.domain.model.person.Person;
+import io.github.anantharajuc.sbgql.domain.model.person.dto.PersonDTO;
 import io.github.anantharajuc.sbgql.service.PersonServiceImpl;
 
 @Component
@@ -21,11 +20,6 @@ public class Query implements GraphQLQueryResolver
 	
 	@Autowired
 	private ModelMapper modelMapper;
-	
-	public PersonResponse findPersonById(long id)
-	{
-		return modelMapper.map(personServiceImpl.findPersonById(id), PersonResponse.class);
-	}
 
 	public String getString()
 	{
@@ -47,8 +41,8 @@ public class Query implements GraphQLQueryResolver
 		return "Hello "+fullName.getFirstName()+" "+fullName.getLastName()+ "! "+LocalDateTime.now();
 	}
 	
-	/*public Person findPersonById(long id)
+	public PersonDTO findPersonById(long id)
 	{
-		return personServiceImpl.findPersonById(id);
-	}*/
+		return modelMapper.map(personServiceImpl.findPersonById(id), PersonDTO.class);
+	}
 }

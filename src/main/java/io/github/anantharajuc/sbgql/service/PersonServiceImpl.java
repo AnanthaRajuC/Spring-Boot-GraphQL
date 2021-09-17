@@ -13,6 +13,11 @@ import io.github.anantharajuc.sbgql.repository.BooksRepository;
 import io.github.anantharajuc.sbgql.repository.PersonRepository;
 import lombok.extern.log4j.Log4j2;
 
+/**
+ * Person Service Implementation.
+ * 
+ * @author <a href="mailto:arcswdev@gmail.com">Anantha Raju C</a>
+ */
 @Log4j2
 @Service
 @Component

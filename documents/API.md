@@ -76,3 +76,18 @@ The API can be tested with any GraphQL client like [Altair GraphQL Client](https
 ```
 
 ---
+
+```txt 
+{
+  findPersonById(id: 1) 
+  {
+    email
+    name
+     books
+    {
+      title
+    }
+  }
+}
+```
+---

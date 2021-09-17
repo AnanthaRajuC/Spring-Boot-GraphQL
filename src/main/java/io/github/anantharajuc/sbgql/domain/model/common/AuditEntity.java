@@ -15,6 +15,12 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 
+/**
+ * Simple JavaBean domain object with createdDate, lastModifiedDate properties. Used as a base class for objects
+ * needing this property.
+ *
+ * @author <a href="mailto:arcswdev@gmail.com">Anantha Raju C</a>
+ */
 @MappedSuperclass
 @Getter
 @Setter

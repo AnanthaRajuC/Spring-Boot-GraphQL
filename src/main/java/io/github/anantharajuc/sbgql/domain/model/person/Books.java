@@ -16,6 +16,11 @@ import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.FieldDefaults;
 
+/**
+ * Simple JavaBean domain object representing books.
+ *
+ * @author Anantha Raju C
+ */
 @Entity
 @Table(name="books")
 @EntityListeners(AuditingEntityListener.class)

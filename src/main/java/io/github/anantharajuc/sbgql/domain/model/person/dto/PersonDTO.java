@@ -1,4 +1,4 @@
-package io.github.anantharajuc.sbgql.domain.model.dto;
+package io.github.anantharajuc.sbgql.domain.model.person.dto;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @FieldDefaults(level=AccessLevel.PRIVATE)
-public class PersonResponse 
+public class PersonDTO 
 {
 	Long id;
 	String name;
@@ -18,5 +18,5 @@ public class PersonResponse
 	String mobileNumber;
 	Boolean isAdult;
 	Integer age;
-	List<BooksResponse> books;
+	List<BooksDTO> books;
 }

@@ -5,7 +5,7 @@ type Query
 	getGreetingsFullName(firstName : String, lastName : String) : String
 	getGreetingsFullNameJSONrequest(fullName : FullName) : String
 	
-	findPersonById(id : Long) : PersonResponse
+	findPersonById(id : Long) : PersonDTO
 }
 
 input FullName
@@ -14,17 +14,17 @@ input FullName
 	lastName : String	
 }
 
-type PersonResponse
+type PersonDTO
 {
 	id: ID
 	name : String
 	email : String
 	mobileNumber : String
 	isAdult : Boolean 
-	books : [BooksResponse]
+	books : [BooksDTO]
 }
 
-type BooksResponse
+type BooksDTO
 {
 	title : String
 }

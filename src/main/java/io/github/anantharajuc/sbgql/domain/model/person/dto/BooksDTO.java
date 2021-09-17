@@ -1,4 +1,4 @@
-package io.github.anantharajuc.sbgql.domain.model.dto;
+package io.github.anantharajuc.sbgql.domain.model.person.dto;
 
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -8,7 +8,7 @@ import lombok.experimental.FieldDefaults;
 @Getter
 @Setter
 @FieldDefaults(level=AccessLevel.PRIVATE)
-public class BooksResponse 
+public class BooksDTO 
 {
 	String title;
 }
