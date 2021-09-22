@@ -45,4 +45,14 @@ public class Query implements GraphQLQueryResolver
 	{
 		return modelMapper.map(personServiceImpl.findPersonById(id), PersonDTO.class);
 	}
+	
+	public long countPersons()
+	{
+		return personServiceImpl.countPersons();
+	}
+	
+	public long countBooks()
+	{
+		return personServiceImpl.countPersons();
+	}
 }

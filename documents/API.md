@@ -26,6 +26,22 @@ The API can be tested with any GraphQL client like [Altair GraphQL Client](https
 
 ```txt 
 {
+	countPersons : Long
+}
+```
+
+---
+
+```txt 
+{
+	countBooks : Long
+}
+```
+
+---
+
+```txt 
+{
   getGreetingsFirstName(firstName: "anantha")
 }
 ```
@@ -85,6 +101,7 @@ The API can be tested with any GraphQL client like [Altair GraphQL Client](https
     name
      books
     {
+	  id
       title
     }
   }

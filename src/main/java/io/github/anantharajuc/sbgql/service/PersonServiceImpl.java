@@ -47,10 +47,5 @@ public class PersonServiceImpl implements IPersonService
 	{
 		return personRepository.count();
 	}
-	
-	public long countBooks() 
-	{
-		return booksRepository.count();
-	}
 }
  

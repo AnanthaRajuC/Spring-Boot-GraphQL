@@ -1,6 +1,9 @@
 type Query 
 {
 	getString : String
+	countPersons : Long
+	countBooks : Long
+	
 	getGreetingsFirstName(firstName : String) : String
 	getGreetingsFullName(firstName : String, lastName : String) : String
 	getGreetingsFullNameJSONrequest(fullName : FullName) : String
@@ -26,6 +29,7 @@ type PersonDTO
 
 type BooksDTO
 {
+	id: ID
 	title : String
 }
 

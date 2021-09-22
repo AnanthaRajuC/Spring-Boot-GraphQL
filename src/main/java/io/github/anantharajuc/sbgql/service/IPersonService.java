@@ -1,5 +1,7 @@
 package io.github.anantharajuc.sbgql.service;
 
+import java.util.List;
+
 import io.github.anantharajuc.sbgql.domain.model.person.Books;
 import io.github.anantharajuc.sbgql.domain.model.person.Person;
 
@@ -12,9 +14,7 @@ public interface IPersonService
 {
 	Person findPersonById(Long id);
 	
-	Iterable<Books> findAllBooks();
+	List<Books> findAllBooks();
 	
 	long countPersons();
-	
-	long countBooks();
 }
